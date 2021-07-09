@@ -137,7 +137,7 @@ var e=Object.defineProperty,t=Object.getOwnPropertySymbols,n=Object.prototype.ha
    @media screen and (max-width: 768px) {
       height: 4rem;
    }
-`,D=({url:e,text:t,type:n,disabled:a,sameTab:l})=>p.createElement(W,{type:n,onClick:e?()=>{l?window.open(e,"_self"):window.open(e)}:void 0,disabled:a},t);D.propTypes={text:b.string,type:b.string,url:b.string,disabled:b.bool,sameTab:b.bool},D.defaultProps={type:"button",sameTab:!1};const Y=c.div`
+`,D=({url:e,text:t,type:n,disabled:a,sameTab:l})=>{const r=()=>{l?window.open(e,"_self"):window.open(e)};return l&&"submit"!==n?p.createElement(s,{to:e},p.createElement(W,{type:"button"},t)):p.createElement(W,{type:n,onClick:e?r:void 0,disabled:a},t)};D.propTypes={text:b.string,type:b.string,url:b.string,disabled:b.bool,sameTab:b.bool},D.defaultProps={type:"button",sameTab:!1};const Y=c.div`
    color: #fff;
    padding: ${({verticalPadding:e})=>e}px 0px;
    background: ${({darkTheme:e})=>e?"#101522":"#fff"};
