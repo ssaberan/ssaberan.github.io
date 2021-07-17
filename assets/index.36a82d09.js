@@ -196,45 +196,48 @@ var e=Object.defineProperty,t=Object.getOwnPropertySymbols,n=Object.prototype.ha
    display: inline-block;
    max-height: 500px;
 `,Z=({darkTheme:e,alignment:t,header:n,subheader:a,description:l,image:r,alt:i,url:o,buttonText:c,sameTab:m,verticalPadding:s})=>p.createElement(p.Fragment,null,p.createElement(Y,{darkTheme:e,verticalPadding:s},p.createElement(R,null,p.createElement(G,{alignment:t},p.createElement(U,null,p.createElement(V,null,p.createElement(J,{darkTheme:e,largeFont:!r,tabIndex:n?0:-1},n),p.createElement(K,{darkTheme:e,largeFont:!r,tabIndex:a?0:-1},a),p.createElement(Q,{darkTheme:e,largeFont:!r,tabIndex:l?0:-1},l),o&&p.createElement(W,{url:o,text:c,sameTab:m,tabIndex:0}))),r&&p.createElement(U,null,p.createElement(X,{src:r,alt:i,tabIndex:0}))))));Z.propTypes={darkTheme:b.bool,alignment:b.string,header:b.string,subheader:b.string,description:b.string,image:b.string,alt:b.string,url:b.string,buttonText:b.string,sameTab:b.bool,verticalPadding:b.number},Z.defaultProps={verticalPadding:120,sameTab:!1};const ee={darkTheme:!0,alignment:"center",header:"Hello",subheader:"Welcome to my website"},te={darkTheme:!1,alignment:"left",header:"Who Am I?",description:"Hi! My name is Soroush and I am a fullstack web developer at American Express! I graduated in 2019 from UC San Diego with a bachelors in math, after which I moved to New York City to begin my first job as a software developer at Amex. In addition to the web development I do in a professional setting, I enjoy doing game development and machine learning in my free time.",image:"/assets/coding.7d6d00f7.svg",alt:"Me at my desk writing some code."},ne={darkTheme:!0,alignment:"right",header:"What else do I do?",description:"My favorite hobby is probably sleeping in, but outside of that I enjoy playing piano, chess, video games, exercising, studying, and watching YouTube videos. I also used to enjoy hiking and longboarding, until I moved to New York City where those hobbies were replaced with exploring the city and going to restaurants.",image:"/assets/walk.548cbed2.svg",alt:"Me taking a walk outside."},ae={darkTheme:!1,alignment:"center",subheader:"Feel free to check out the other menu items above",description:"If you are hiring, feel free to download my resume below",verticalPadding:60,url:"/soroush_saberan_resume.pdf",buttonText:"Resume"},le=()=>p.createElement(p.Fragment,null,p.createElement(E,null,p.createElement("title",null,"Homepage")),p.createElement(Z,r({},ee)),p.createElement(Z,r({},te)),p.createElement(Z,r({},ne)),p.createElement(Z,r({},ae))),re=c.div`
-   border: 5px solid #101522;
-   margin: 50px;
+   border: 10px solid #101522;
+   margin: 40px;
    text-align: center;
    width: 300px;
    overflow: hidden;
    background: #101522;
+   border-radius: 15px;
 
    &:hover {
       box-shadow: 10px 10px 10px 10px gray;
-      margin-top: 45px;
-      margin-left: 45px;
+      margin-top: 35px;
+      margin-left: 35px;
       transition: all 0.3s ease;
    }
 
-   @media screen and (max-width: 768px) {
+   @media screen and (max-width: 480px) {
       margin: auto;
-      margin: 0px;
-      width: 100%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-bottom: 10px groove gray;
+      width: 80%;
+      margin-top: 35px;
+      padding: 10px;
+      border: 5px solid #101522;
 
       &:hover {
          box-shadow: none;
-         margin: 0px;
+         margin: auto;
+         margin-top: 35px;
       }
    }
 `,ie=c.img`
    width: 100%;
 `,oe=c.div`
    margin: auto;
-   padding: 5px;
+   padding-top: 5px;
+   padding-bottom: 5px;
    font-size: 20px;
    width: 100%;
    height: 100%;
    color: white;
 `,ce=c.div`
    margin: auto;
-   padding: 5px;
+   padding-top: 5px;
+   padding-bottom: 5px;
    font-size: 14px;
    width: 100%;
    height: 100%;
