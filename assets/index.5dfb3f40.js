@@ -220,8 +220,7 @@ var e=Object.defineProperty,t=Object.getOwnPropertySymbols,n=Object.prototype.ha
 
       &:hover {
          box-shadow: none;
-         margin-top: 50px;
-         margin-left: 50px;
+         margin: 0px;
       }
    }
 `,ie=c.img`
